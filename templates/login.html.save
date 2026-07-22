@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}
+Login | FaceTrack AI
+{% endblock %}
+
+{% block content %}
+
+<div class="login-container">
+
+    <div class="login-box">
+
+        <h1>FaceTrack AI</h1>
+
+        <h3>AI Powered Attendance System</h3>
+
+        <form action="/login" method="POST">
+
+            <input
+                type="text"
+		name="username"
+                placeholder="Username"
+		required
+            >
+
+            <input
+                type="password"
+		name="password"
+                placeholder="Password"
+		required
+            >
+
+          <button>
+Login
+</button>
+
+<form action="/login" method="POST">
+
+</div>
+
+</div>
+
+{% endblock %}  

@@ -1,0 +1,58 @@
+from flask import Flask, render_template, request, redirect, url_for
+
+print("=" * 40)
+print("        FaceTrack AI")
+print("=" * 40)
+print("Application Started Successfully")
+
+app = Flask(__name__)
+
+
+@app.route("/", methods=["GET"])
+def login_page():
+    return render_template("login.html")
+
+
+@app.route("/login", methods=["POST"])
+def login():
+    username = request.form.get("username")
+    password = request.form.get("password")
+
+    if username == "ayush" and password == "1234":
+        return redirect(url_for("dashboard"))
+
+    return redirect(url_for("login_page"))
+
+
+@app.route("/dashboard")
+def dashboard():
+    return render_template("dashboard.html")
+
+
+@app.route("/attendance")
+def attendance():
+    return render_template("attendance.html")
+
+
+@app.route("/students")
+def students():
+    return render_template("students.html")
+
+
+@app.route("/reports")
+def reports():
+    return render_template("reports.html")
+
+
+@app.route("/settings")
+def settings():
+    return render_template("settings.html")
+
+
+if __name__ == "__main__":
+    print("Starting Flask Server...")
+    app.run(
+        host="0.0.0.0",
+        port=5000,
+        debug=True
+    )
