@@ -1,10 +1,14 @@
 # 📷 Recogny AI: Hybrid Face Recognition Attendance Management System
 
+
+
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-3.0-000000?style=for-the-badge&logo=flask&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/OpenCV-ONNX-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
 ![Amazon DynamoDB](https://img.shields.io/badge/Amazon-DynamoDB-4053D6?style=for-the-badge&logo=amazondynamodb&logoColor=white)
 ![Amazon S3](https://img.shields.io/badge/Amazon-S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white)
+
+![Project Dashboard](Dashboard.png)
 
 Recogny AI is an enterprise-ready, hybrid edge-cloud attendance management system. The application leverages **local edge-computing** for sub-second facial recognition (running deep-learning models locally on ONNX runtime) and synchronizes registrations, logs, and sheets to **Amazon Web Services (S3 and DynamoDB)**. 
 
