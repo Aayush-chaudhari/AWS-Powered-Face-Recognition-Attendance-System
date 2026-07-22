@@ -8,7 +8,7 @@
 ![Amazon DynamoDB](https://img.shields.io/badge/Amazon-DynamoDB-4053D6?style=for-the-badge&logo=amazondynamodb&logoColor=white)
 ![Amazon S3](https://img.shields.io/badge/Amazon-S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white)
 
-![Project Login Page](Login Page.png)
+![Project LoginPage](LoginPage.png)
 ![Project Dashboard](Dashboard.png)
 
 Recogny AI is an enterprise-ready, hybrid edge-cloud attendance management system. The application leverages **local edge-computing** for sub-second facial recognition (running deep-learning models locally on ONNX runtime) and synchronizes registrations, logs, and sheets to **Amazon Web Services (S3 and DynamoDB)**. 
